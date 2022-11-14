@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6D9A1312-F369-4C46-87FD-4F1E4395D38C}</ProjectGuid>
+    <RootNamespace>My1p1Emu</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>Libcd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>Libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\1p1Emu.cpp" />
+    <ClCompile Include="..\1p1EmuDlg.cpp" />
+    <ClCompile Include="..\BufferEx.cpp" />
+    <ClCompile Include="..\ChaExpTable.cpp" />
+    <ClCompile Include="..\ChaExpTableD.cpp" />
+    <ClCompile Include="..\ChaExpTableDSet.cpp" />
+    <ClCompile Include="..\ChaExpTableSet.cpp" />
+    <ClCompile Include="..\ChangeOtherItemTable.cpp" />
+    <ClCompile Include="..\ChangeOtherItemTableSet.cpp" />
+    <ClCompile Include="..\CircularBuffer.cpp" />
+    <ClCompile Include="..\ClassStoreTable.cpp" />
+    <ClCompile Include="..\ClassStoreTableSet.cpp" />
+    <ClCompile Include="..\COM.cpp" />
+    <ClCompile Include="..\ConExpTable.cpp" />
+    <ClCompile Include="..\ConExpTableD.cpp" />
+    <ClCompile Include="..\ConExpTableDSet.cpp" />
+    <ClCompile Include="..\ConExpTableSet.cpp" />
+    <ClCompile Include="..\EVENT.cpp" />
+    <ClCompile Include="..\EVENT_DATA.cpp" />
+    <ClCompile Include="..\EXEC.cpp" />
+    <ClCompile Include="..\ExpTable.cpp" />
+    <ClCompile Include="..\ExpTableD.cpp" />
+    <ClCompile Include="..\ExpTableDSet.cpp" />
+    <ClCompile Include="..\ExpTableSet.cpp" />
+    <ClCompile Include="..\global.cpp" />
+    <ClCompile Include="..\Guild.cpp" />
+    <ClCompile Include="..\GuildMember.cpp" />
+    <ClCompile Include="..\Ini.cpp" />
+    <ClCompile Include="..\IOCPort.cpp" />
+    <ClCompile Include="..\IOCPSocket2.cpp" />
+    <ClCompile Include="..\ItemTable.cpp" />
+    <ClCompile Include="..\ItemTableSet.cpp" />
+    <ClCompile Include="..\LOGIC.cpp" />
+    <ClCompile Include="..\LOGIC_ELSE.cpp" />
+    <ClCompile Include="..\MagicTable.cpp" />
+    <ClCompile Include="..\MagicTableSet.cpp" />
+    <ClCompile Include="..\MakeSkillTable.cpp" />
+    <ClCompile Include="..\MakeSkillTableSet.cpp" />
+    <ClCompile Include="..\MAP.cpp" />
+    <ClCompile Include="..\MyDataBase.cpp" />
+    <ClCompile Include="..\Npc.cpp" />
+    <ClCompile Include="..\NpcAction.cpp" />
+    <ClCompile Include="..\NpcAttack.cpp" />
+    <ClCompile Include="..\NpcChat.cpp" />
+    <ClCompile Include="..\NpcChatSet.cpp" />
+    <ClCompile Include="..\NpcConUser.cpp" />
+    <ClCompile Include="..\NpcMove.cpp" />
+    <ClCompile Include="..\NpcPosSet.cpp" />
+    <ClCompile Include="..\NpcTable.cpp" />
+    <ClCompile Include="..\NpcTableSet.cpp" />
+    <ClCompile Include="..\NpcThread.cpp" />
+    <ClCompile Include="..\PathFind.cpp" />
+    <ClCompile Include="..\PlusSpecialTable.cpp" />
+    <ClCompile Include="..\PlusSpecialTableSet.cpp" />
+    <ClCompile Include="..\Search.cpp" />
+    <ClCompile Include="..\SEncryption.cpp" />
+    <ClCompile Include="..\SERVERINFO.cpp" />
+    <ClCompile Include="..\SkillExpTable.cpp" />
+    <ClCompile Include="..\SkillExpTableD.cpp" />
+    <ClCompile Include="..\SkillExpTableDSet.cpp" />
+    <ClCompile Include="..\SkillExpTableSet.cpp" />
+    <ClCompile Include="..\SpecialTable.cpp" />
+    <ClCompile Include="..\SpecialTableSet.cpp" />
+    <ClCompile Include="..\StatExpTable.cpp" />
+    <ClCompile Include="..\StatExpTableD.cpp" />
+    <ClCompile Include="..\StatExpTableDSet.cpp" />
+    <ClCompile Include="..\StatExpTableSet.cpp" />
+    <ClCompile Include="..\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Store.cpp" />
+    <ClCompile Include="..\StoreSet.cpp" />
+    <ClCompile Include="..\ThrowItem.cpp" />
+    <ClCompile Include="..\TownPortalFixedSet.cpp" />
+    <ClCompile Include="..\TownPortalSet.cpp" />
+    <ClCompile Include="..\TraderExchangeTable.cpp" />
+    <ClCompile Include="..\TraderExchangeTableSet.cpp" />
+    <ClCompile Include="..\USER.cpp" />
+    <ClCompile Include="..\UserBBS.cpp" />
+    <ClCompile Include="..\UserChat.cpp" />
+    <ClCompile Include="..\UserConNpc.cpp" />
+    <ClCompile Include="..\UserDatabase.cpp" />
+    <ClCompile Include="..\UserDebug.cpp" />
+    <ClCompile Include="..\UserEvt.cpp" />
+    <ClCompile Include="..\UserGuild.cpp" />
+    <ClCompile Include="..\UserItem.cpp" />
+    <ClCompile Include="..\UserMagic.cpp" />
+    <ClCompile Include="..\UserMisc.cpp" />
+    <ClCompile Include="..\UserPacket.cpp" />
+    <ClCompile Include="..\UserParty.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\1p1Emu.h" />
+    <ClInclude Include="..\1p1EmuDlg.h" />
+    <ClInclude Include="..\BufferEx.h" />
+    <ClInclude Include="..\ChaExpTable.h" />
+    <ClInclude Include="..\ChaExpTableD.h" />
+    <ClInclude Include="..\ChaExpTableDSet.h" />
+    <ClInclude Include="..\ChaExpTableSet.h" />
+    <ClInclude Include="..\ChangeOtherItemTable.h" />
+    <ClInclude Include="..\ChangeOtherItemTableSet.h" />
+    <ClInclude Include="..\CircularBuffer.h" />
+    <ClInclude Include="..\ClassStoreTable.h" />
+    <ClInclude Include="..\ClassStoreTableSet.h" />
+    <ClInclude Include="..\COM.h" />
+    <ClInclude Include="..\ConExpTable.h" />
+    <ClInclude Include="..\ConExpTableD.h" />
+    <ClInclude Include="..\ConExpTableDSet.h" />
+    <ClInclude Include="..\ConExpTableSet.h" />
+    <ClInclude Include="..\Define.h" />
+    <ClInclude Include="..\EVENT.h" />
+    <ClInclude Include="..\EVENT_DATA.h" />
+    <ClInclude Include="..\EXEC.h" />
+    <ClInclude Include="..\ExpTable.h" />
+    <ClInclude Include="..\ExpTableD.h" />
+    <ClInclude Include="..\ExpTableDSet.h" />
+    <ClInclude Include="..\ExpTableSet.h" />
+    <ClInclude Include="..\Extern.h" />
+    <ClInclude Include="..\global.h" />
+    <ClInclude Include="..\Guild.h" />
+    <ClInclude Include="..\GuildMember.h" />
+    <ClInclude Include="..\Ini.h" />
+    <ClInclude Include="..\IOCPort.h" />
+    <ClInclude Include="..\IOCPSocket2.h" />
+    <ClInclude Include="..\ItemTable.h" />
+    <ClInclude Include="..\ItemTableSet.h" />
+    <ClInclude Include="..\LOGIC.h" />
+    <ClInclude Include="..\LOGIC_ELSE.h" />
+    <ClInclude Include="..\MagicTable.h" />
+    <ClInclude Include="..\MagicTableSet.h" />
+    <ClInclude Include="..\MakeSkillTable.h" />
+    <ClInclude Include="..\MakeSkillTableSet.h" />
+    <ClInclude Include="..\MAP.h" />
+    <ClInclude Include="..\MemDefine.h" />
+    <ClInclude Include="..\MyDataBase.h" />
+    <ClInclude Include="..\Npc.h" />
+    <ClInclude Include="..\NpcChat.h" />
+    <ClInclude Include="..\NpcChatSet.h" />
+    <ClInclude Include="..\NpcPosSet.h" />
+    <ClInclude Include="..\NpcTable.h" />
+    <ClInclude Include="..\NpcTableSet.h" />
+    <ClInclude Include="..\NpcThread.h" />
+    <ClInclude Include="..\Packet.h" />
+    <ClInclude Include="..\PathFind.h" />
+    <ClInclude Include="..\PlusSpecialTable.h" />
+    <ClInclude Include="..\PlusSpecialTableSet.h" />
+    <ClInclude Include="..\Resource.h" />
+    <ClInclude Include="..\Search.h" />
+    <ClInclude Include="..\SEncryption.h" />
+    <ClInclude Include="..\SERVERINFO.h" />
+    <ClInclude Include="..\SkillExpTable.h" />
+    <ClInclude Include="..\SkillExpTableD.h" />
+    <ClInclude Include="..\SkillExpTableDSet.h" />
+    <ClInclude Include="..\SkillExpTableSet.h" />
+    <ClInclude Include="..\SpecialTable.h" />
+    <ClInclude Include="..\SpecialTableSet.h" />
+    <ClInclude Include="..\StatExpTable.h" />
+    <ClInclude Include="..\StatExpTableD.h" />
+    <ClInclude Include="..\StatExpTableDSet.h" />
+    <ClInclude Include="..\StatExpTableSet.h" />
+    <ClInclude Include="..\stdafx.h" />
+    <ClInclude Include="..\Store.h" />
+    <ClInclude Include="..\StoreSet.h" />
+    <ClInclude Include="..\targetver.h" />
+    <ClInclude Include="..\ThrowItem.h" />
+    <ClInclude Include="..\TownPortalFixedSet.h" />
+    <ClInclude Include="..\TownPortalSet.h" />
+    <ClInclude Include="..\TraderExchangeTable.h" />
+    <ClInclude Include="..\TraderExchangeTableSet.h" />
+    <ClInclude Include="..\USER.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\res\1p1Emu.ico" />
+    <None Include="..\res\My1p1Emu.rc2" />
+    <None Include="..\ReadMe.txt" />
+    <None Include="..\Resource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\1p1Emu.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

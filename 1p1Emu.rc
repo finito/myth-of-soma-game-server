@@ -1,0 +1,428 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MY1P1EMU_DIALOG DIALOGEX 0, 0, 218, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Soma Server - Finito 2008/09"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Shutdown",IDCANCEL,87,23,48,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", ""
+            VALUE "FileDescription", ""
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SomaServer.exe"
+            VALUE "LegalCopyright", ""
+            VALUE "OriginalFilename", "SomaServer.exe"
+            VALUE "ProductName", ""
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MY1P1EMU_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "Resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\My1p1Emu.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\1p1Emu.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_WELCOME_MSG         "Welome to SomaDev.com Myth of Soma server!"
+    IDS_BLOCKING_SHOUT      "<<< You are currently blocking zone shout messages >>>"
+    IDS_BLOCKING_PM         "<<< You are currently blocking private messages >>>"
+    IDS_BLOCKING_PARTY      "<<< You are currently blocking party invitations >>>"
+    IDS_POLICE_CHAT         "<<< Cannot chat at the present moment. >>>"
+    IDS_USER_TOO_LOW_LEVEL_FOR_SHOUT 
+                            "<<< You're not at the right level to shout >>>"
+    IDS_USER_NOT_ENOUGH_STAMINA_FOR_SHOUT 
+                            "<<< You need more stamina in order to shout >>>"
+    IDS_PM_USER_NOT_CONNECTED_NOW 
+                            "<< Failed to send the PM: The user is not logged on. >>>"
+    IDS_CANNOT_PM_SELF      "<<< You can't send a message to yourself >>>"
+    IDS_USER_REJECT_WHISPER "<<< Please exit from the Reject Note mode first. >>>"
+    IDS_OTHER_USER_REJECT_WHISPER 
+                            "<<< The user is rejecting private messages >>>"
+    IDS_EQUIP_OFF_INV_FULL  "<< You do not have enough space in your inventory to take this item off. >>>"
+    IDS_THROW_BARR          "<<< You dropped %d Barr >>>"
+    IDS_THROW_ITEM          "<<< Throw %s >>>"
+    IDS_THROW_ITEMS         "<<< You dropped: %d %s >>>"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PICKUP_WEIGHT_FULL  "<<< Failed to pick up the item : you will exceed your current bagweight limit >>>"
+    IDS_BELT_FULL           "<<< You have no more space in your belt >>>"
+    IDS_PICKUP_BARR         "<<< You have picked up %d Barr >>>"
+    IDS_PICKUP_ITEM         "<<< You picked up: %s >>>"
+    IDS_PICKUP_ITEMS        "<<< You picked up: %d %s >>>"
+    IDS_USER_CURRENT_USER_COUNT "Current user count is %d"
+    IDS_BUY_NOT_ENOUGH_WEIGHT 
+                            "<<< You cannot buy this item: you will exceed your bagweight limit. >>>"
+    IDS_BUY_NOT_ENOUGH_BARR "<<< You can't afford that >>>"
+    IDS_BUY_NOT_ENOUGH_POS  "<<< You don't have enough pos >>>"
+    IDS_INV_FULL            "<<< You have no more space in your inventory >>>"
+    IDS_TAKESTORAGE_WEIGHT_FULL 
+                            "<< Failed to take out the item : You're exceding your bagweight limit. >>>"
+    IDS_USER_ITEM_CANNOT_EQUIP 
+                            "<<< You cannot equip this item with your current skills. >>>"
+    IDS_USER_ITEM_STILL_EQUIPPED 
+                            "<<< You need to unequip everything in order to use this item >>>"
+    IDS_USER_ITEM_CANNOT_USE "<<< You cannot use this item >>>"
+    IDS_GM_MSG_ATTACK_DELAY "Attack Delay(%d)"
+    IDS_GM_MSG_ATTACK_INFO  "Attack Info(Damage = %d, Exp = %d)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USER_WIS_INC        "<<< Your Wisdom has increased >>>"
+    IDS_USER_CON_INC        "<<< Your Constitution has increased >>>"
+    IDS_USER_CHA_INC        "<<< Your Charisma has increased >>>"
+    IDS_USER_BLACK_MAGIC    "Black Magic Skill"
+    IDS_USER_BLUE_MAGIC     "Blue Magic Skill"
+    IDS_USER_WHITE_MAGIC    "White Magic Skill"
+    IDS_USER_SWORD          "Sword Skill"
+    IDS_USER_SPEAR          "Spear Skill"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USER_AXE            "Axe Skill"
+    IDS_USER_BOW            "Bow Skill"
+    IDS_USER_KNUCKLE        "Knuckle Skill"
+    IDS_USER_WEAPON         "Weapon Manufacturing Skill"
+    IDS_USER_ARMOR          "Armor Manufacturing Skill"
+    IDS_USER_ACC            "Accessory Manufacturing Skill"
+    IDS_USER_POT            "Potion Manufacturing Skill"
+    IDS_USER_COOK           "Cooking Manufacturing Skill"
+    IDS_USER_INC            "<<< Your %s has increased >>>"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USER_DEC            "<<< Your %s has decreased >>>"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GM_MSG_ATTACK_DAMAGE "AT = %d"
+    IDS_USER_STAFF          "Staff Skill"
+    IDS_GM_MSG_PLUS_WEAPON_EXP "Plus Weapon Exp (Type = %s, Exp = %d)"
+    IDS_USER_STR_INC        "<<< Your Strength has increased >>>"
+    IDS_USER_DEX_INC        "<<< Your Dexterity has increased >>>"
+    IDS_USER_INT_INC        "<<< Your Intelligence has increased >>>"
+    IDS_USER_STR_DEC        "<<< Your Strength has decreased >>>"
+    IDS_USER_DEX_DEC        "<<< Your Dexterity has decreased >>>"
+    IDS_USER_INT_DEC        "<<< Your Intelligence has decreased >>>"
+    IDS_USER_WIS_DEC        "<<< Your Wisdom has decreased >>>"
+    IDS_USER_CON_DEC        "<<< Your Constitution has decreased >>>"
+    IDS_USER_CHA_DEC        "<<< Your Charisma has decreased >>>"
+    IDS_USER_MAGIC_MORAL_LOW 
+                            "<<< You cannot use this magic because your moral is too low >>>"
+    IDS_USER_MAGIC_MORAL_HIGH 
+                            "<<< You cannot use this magic because your moral is too high >>>"
+    IDS_USER_MAGIC_SKILL_LOW 
+                            "<<< You do not have enough skill to use this magic >>>"
+    IDS_USER_STORAGE_SPACE_INC "<<< Space in your warehouse has increased >>>"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USER_ITEM_BADLY_DMG "<<< %s is badly damaged >>>"
+    IDS_USER_ITEM_ABOUT_TO_BREAK "<<< %s is about to break >>>"
+    IDS_USER_ITEM_DESTROYED "<<< You just destroyed %s >>>"
+    IDS_USER_BLOCKING_PARTY "<<< Blocking party invitations >>>"
+    IDS_USER_ACCEPTING_PARTY "<<< Accepting party invitations >>>"
+    IDS_USER_PARTY_DISBANDED "<<< The party has been disbanded >>>"
+    IDS_USER_PARTY_LEAVE    "<<< %s has left the party >>>"
+    IDS_USER_NOT_CONNECTED_NOW "<<< %s is not currently logged in >>>"
+    IDS_USER_CANNOT_PARTY_OTHER_RACE 
+                            "<<< You cannot have a player of another race in your party >>>"
+    IDS_USER_BLOCKING_PARTY_INVITE "<<< %s is blocking party invitations >>>"
+    IDS_USER_PARTY_REACHED_MAX_ALLOWED 
+                            "<<< The party has reached the maximum number of members allowed >>>"
+    IDS_USER_ALREADY_IN_PARTY "<<< %s is already in a party >>>"
+    IDS_USER_PARTY_WITHDRAW "<<<  The party setup has been canceled >>>"
+    IDS_USER_PARTY_CREATED  "<<< The party has been formed >>>"
+    IDS_USER_PARTY_JOIN     "<<< %s has joined the party >>>"
+    IDS_USER_CURRENTLY_PARTY_WITH "<<< %s is currently in a party >>>"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USER_CANNOT_PK_LEVEL_BELOW 
+                            "<<< You cannot attack characters that are below level %d >>>"
+    IDS_USER_ATTACK_RATE    "Attack USER -> USER rate = %d"
+    IDS_USER_REVIVE_LOW_SKILL 
+                            "<<< You will resurrect in town because you have low skills. >>>"
+    IDS_USER_REVIVE_BY_ITEM "<<< Resurrected using %s >>>"
+    IDS_GM_MSG_MAGIC_DEF    "MDF = %d"
+    IDS_GM_MSG_DEFENSE      "DF = %d"
+    IDS_CHANGEOTHERITEM_WEIGHT_FULL 
+                            "<<< You cannot change this item: you will exceed your bagweight limit. >>>"
+    IDS_GM_MSG_MAGIC_ATTACK_INFO "Magic Attack Info(Damage = %d, Exp = %d)"
+    IDS_GM_MSG_MAGIC_AT     "MAT = %d"
+    IDS_GM_MSG_MORAL_EXP    "Moral Exp = %d"
+    IDS_GM_MSG_PLUS_MAGIC_EXP "Plus Magic Exp (Type = %s, Exp = %d)"
+    IDS_GM_KICK_USER        "<<< %s Kick Out >>>"
+    IDS_USER_CANNOT_SELL_ITEM "<<< You can't sell this item >>>"
+    IDS_CLASS_WAR_BEGUN     "<<< The war between Human's World and Devil's World has begun >>>"
+    IDS_CLASS_WAR_END_HSOMA "<<< The Human's won the War of the Worlds and taken control of the Continental Army Area >>>"
+    IDS_CLASS_WAR_END_DSOMA "<<< The Devil's won the War of the Worlds and taken control of the Continental Army Area >>>"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRADER_EXCHANGE_NO_INV_SPACE 
+                            "<<< Cannot exchange because you lack inventory space >>"
+    IDS_TRADER_EXCHANGE_NOT_ENOUGH_ITEM "<<< Do not have enough items >>>"
+    IDS_TRADER_EXCHANGE_WEIGHT_FULL 
+                            "<<< You cannot exchange: you will exceed your bagweight limit. >>>"
+    IDS_MAKE_GUILD          "<<< %s guild has been created >>>"
+    IDS_GUILD_USER_APPLY    "<<< %s has applied to join the guild >>>"
+    IDS_GUILD_APPLICATION_ACCEPTED 
+                            "<<< Your request for joining the %s guild has been accepted >>>"
+    IDS_GUILD_USER_JOIN     "<<< %s has joined the guild >>>"
+    IDS_GUILD_APPLICATION_REJECTED 
+                            "<<< Your request for joining the %s guild has been rejected >>>"
+    IDS_GUILD_LEADER_CHANGE "<<< The Leader of the guild changed from %s to %s >>>"
+    IDS_GUILD_USER_EXPELLED "<<< %s has been expelled from the guild >>>"
+    IDS_GUILD_USER_WITHDRAW "<<< %s has withdrawn from the guild >>>"
+    IDS_GM_MSG_SPECIAL_ATTACK_INFO "<<< SA Info -> hp = %d mp = %d >>>"
+    IDS_USER_NEED_SCROLL_FOR_SHOUT 
+                            "<<< In order to use Zone Shouts, you need a Shout Scroll >>>"
+    IDS_TRADER_EXCHANGE_RECEIEVE_ITEM "<<< You received %s. >>>"
+    IDS_TRADER_EXCHANGE_RECEIEVE_ITEMS "<<< You received %d %s. >>>"
+    IDS_USER_HAS_POS        "<<< %s has %d Pos >>>"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ZONESHOUT_REFUSE    "<<< You are in refuse mode for zone chat. >>>"
+    IDS_ZONESHOUT_ALLOW     "<<< You are in allow mode for zone chat. >>>"
+    IDS_BLOCK_PM            "<<< You are now blocking private messages >>>"
+    IDS_ALLOW_PM            "<<< You now allow private messages >>>"
+    IDS_CANNOT_THROW_ITEM   "<<< You can't throw away this item >>>"
+    IDS_USER_WAREHOUSE_FULL "<<< Your warehouse is full >>>"
+    IDS_NOT_ENOUGH_WEIGHT   "<<< You cannot receive item(s): you will exceed your bagweight limit. >>>"
+    IDS_GM_MSG_SPECIAL_ATTACK_CANCEL "RELEASE SATTACK(type = %d)"
+    IDS_USER_DOUBLE_CHAR    "Someone else is already loged onto this character."
+    IDS_ALREADY_IN_GUILD_WAR 
+                            "<<< You cannot challenge another guild during a war. >>>"
+    IDS_GUILD_WAR_ONLY_LEADER 
+                            "<<< Only the Leader of the guild can start a war. >>>"
+    IDS_GUILD_WAR_CANNOT_FIND_GUILD "<<< %s Guild doesn't exist. >>>"
+    IDS_GUILD_WAR_CANNOT_FIND_GUILD_LEADER 
+                            "<<< The leader %s of the Guild is not logged on. >>>"
+    IDS_GUILD_WAR_CANNOT_WAR_OTHER_RACE 
+                            "<<< You cannot start a guid war with another race. >>>"
+    IDS_GUILD_WAR_OTHER_GUILD_IN_WAGER 
+                            "<<< The guild is waging for war with another guild. >>>"
+    IDS_GUILD_WAR_CANNOT_WAR_OWN_GUILD 
+                            "<<< You cannot challenge your own guild. >>>"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USER_HIDE           "<<< You leap into the shadows >>>"
+    IDS_USER_APPEAR         "<<< You fade into presence >>>"
+    IDS_TRADE_CANCEL        "<<< The Counterpart canceled the trade. >>>"
+    IDS_GUILD_STORAGE_IN_USE "<<< %s is currently using the guild storage >>>"
+    IDS_GUILD_STORAGE_FULL  "<<< Guild warehouse is full >>>"
+    IDS_CANNOT_PLACE_GUILD_STORAGE 
+                            "<<< Cannot place this in the guild storage >>>"
+    IDS_USER_NO_PERMISSION_USE 
+                            "<<< You don't have the permissions to use this. >>>"
+    IDS_GUILDWAR_START      "<<< A Combat has begun between %s guild and %s guild. >>>"
+    IDS_GUILDWAR_END        "<<< The war between %s guild and the %s guild has ended. %s won it. >>>"
+    IDS_GM_INV_CHANGED      "<<< Inventory Content Changed to Character %s >>>"
+    IDS_GM_INV_RESTORED     "<<< Inventory Content Restored >>>"
+    IDS_ITEM_MORAL_HIGH     "<<< You cannot use this item because your moral is too high. >>>"
+    IDS_CANNOT_TRADE_ITEM   "<<< You can't trade this item >>>"
+    IDS_TRADE_NO_INV_SPACE  "<<< Failed to add item for trade : you lack inventory space. >>>"
+    IDS_TRADE_WEIGHT_FULL   "<<< Failed to add item for trade : %s would exceed their bagweight limit. >>>"
+    IDS_GUILD_TOWN_WAR_TYT_BEGUN 
+                            "<<< The war for the possession of %s guild town in Thousand Year Town area has begun >>>"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GUILD_TOWN_WAR_IC_BEGUN 
+                            "<<< The war for the possession of %s guild town in Infernal Caves area has begun >>>"
+    IDS_GUILD_TOWN_WAR_END  "<<< The battle for %s guild town has ended. %s won it. >>>"
+    IDS_GUILD_TOWN_WAR_TYT_SOON 
+                            "<<< The attack at %s Guild Village in Thousand Year Town area will start at month %d day %d hour %d (UTC - real world time) >>>"
+    IDS_GUILD_TOWN_WAR_IC_SOON 
+                            "<<< The attack at %s Guild Village in Infernal Caves area will start at month %d day %d hour %d (UTC - real world time) >>>"
+    IDS_GUILD_TOWN_WAR_IN_PROGRESS 
+                            "<<< The guild village war for %s guild village is in progress >>>"
+    IDS_CANNOT_FIND_USER    "<<< Cannot find %s >>>"
+    IDS_GUILD_MEMBERS_ONLY  "<<< Only allowed to guild members >>>"
+    IDS_GUILD_TOWN_OWNER_ONLY 
+                            "<<< Only the guild that owns the Guild Village can use this >>>"
+    IDS_GUILD_WAR_GUILD_TOWN_WAR 
+                            "<<< Cannot start a war while fightin a Guild Village war >>>"
+    IDS_GUILD_WAR_NOT_ENOUGH_BARR 
+                            "<<< Cannot request a war because there is not enough barr in the guild stash. >>>"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\My1p1Emu.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED

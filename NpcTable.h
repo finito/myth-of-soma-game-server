@@ -1,0 +1,60 @@
+#pragma once
+
+class CNpcTable  
+{
+public:
+	int		m_sSid;
+	int		m_sPid;
+	BYTE	m_tType;
+	int		m_sTypeAI;
+	int		m_sMinDamage;
+	short	m_sClass;
+	TCHAR	m_strName[50];
+	int		m_sBlood;
+	int		m_sLevel;
+	long	m_iMaxExp;
+	int		m_sStr;
+	int		m_sWStr;
+	int		m_sAStr;
+	int		m_sDex_at;
+	int		m_sDex_df;
+	int		m_sIntel;
+	int		m_sCharm;
+	int		m_sWis;
+	int		m_sCon;
+	int		m_sMaxHp;
+	int		m_sMaxMp;
+	long	m_iStatus;
+	long	m_iMoral;
+	BYTE	m_at_type;
+	BYTE	m_can_escape;
+	BYTE	m_can_find_enemy;
+	BYTE	m_can_find_our;
+	BYTE	m_have_item_num;
+	BYTE	m_haved_item;
+	BYTE	m_have_magic_num;
+	BYTE	m_haved_magic;
+	BYTE	m_have_skill_num;
+	BYTE	m_haved_skill;
+	BYTE	m_search_range;
+	BYTE	m_movable_range;
+	int		m_move_speed;
+	int		m_standing_time;
+	int		m_regen_time;
+	int		m_bmagicexp;
+	int		m_wmagicexp;
+	int		m_dmagicexp;
+	int		m_sRangeRate;
+	int		m_sBackRate;
+	int		m_sHowTarget;
+	int		m_sMoneyRate;
+	int		m_sMagicNum01;
+	int		m_sMagicRate01;
+	int		m_sMagicNum02;
+	int		m_sMagicRate02;
+	int		m_sMagicNum03;
+	int		m_sMagicRate03;
+	int		m_sDistance;
+	CNpcTable();
+	virtual ~CNpcTable();
+};
